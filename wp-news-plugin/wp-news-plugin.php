@@ -9,7 +9,7 @@ Plugin Name: My-plugin
 Plugin URI: http://google.com
 Description: newsletter plugin
 Version: 0.1.0
-Author: samy kuzanagi
+Author: anas kuzanagi
 Author URI: http://google.com
 */
 
@@ -51,42 +51,4 @@ $my_news_plugin = new my_news_plugin();
 $my_news_plugin->register();
 
 
-
-// class my_newsPlugin {
-    
-    //     public function __construct() {
-        //         add_action('init', array($this, 'custom_post_type'));
-        //     }
-        
-        //     function register() {
-            //         add_action('admin_enqueue_scripts', array($this, 'enqueue'));
-            //     }
-            
-            //     public function activate() {
-                
-                //         $this->custom_post_type();
-                //         flush_rewrite_rules();
-                //     }
-                
-                //     public function deactivate()  {
-                    //         flush_rewrite_rules();
-                    //     }
-                    
-                    //     public function custom_post_type() {
-                        //         register_post_type('book', ['public' => true, 'label' => 'Books']);
-                        //     }
-                        
-                        //     function enqueue() {
-                            //         wp_enqueue_style('mypluginstyle', plugins_url('/assets/css/main.css', __FILE__));
-                            //         wp_enqueue_script('mypluginscript', plugins_url('/assets/js/main.js', __FILE__));
-                            //     }
-                            // }
-                            
-                            // if(class_exists('my_newsPlugin')) {
-                                //     $my_newsPlugin = new my_newsPlugin();
-                                //     $my_newsPlugin->register();
-                                // }
-                                
-                                // register_activation_hook(__FILE__, array($my_newsPlugin, 'activate'));
-                                // register_deactivation_hook(__FILE__, array($my_newsPlugin, 'deactivate'));
                                 
